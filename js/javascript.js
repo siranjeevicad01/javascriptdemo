@@ -16,3 +16,18 @@ console.log({fname:"Jeevi", lname:"S"});
 console.table({fname:"Jeevi", lname:"S"});
  
 console.log(d);
+
+var a1= 5;
+var a2= 7;
+//arithmetic
+console.log(a1+a2);
+console.log(a1-a2);
+console.log(a1*a2);
+console.log(a1/a2);
+console.log(a1%a2);
+console.log(a1**a2);
+//assignment
+var b1=10;
+console.log(b1+=20);
+console.log(b1-=20);
+console.log(b1*=20);
