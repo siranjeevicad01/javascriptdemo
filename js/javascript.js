@@ -31,3 +31,15 @@ var b1=10;
 console.log(b1+=20);
 console.log(b1-=20);
 console.log(b1*=20);
+
+
+function checkgrade(){
+    console.log("welcom");
+    console.log("jus trying js");
+}
+checkgrade()
+
+var checkgrade1 = (a,b)=>{
+    return a+b;
+}
+console.log(checkgrade1(1,2));
