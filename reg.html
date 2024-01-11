@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+    <table class="tbl" border="1 px">
+    <tr>
+        <td>Registeration Form </td>
+    </tr><br>
+    <tr>
+        <td>Name</td>
+        <td id="name"></td>
+    </tr><br>
+    <tr>
+        <td>DOB</td>
+        <td id="dob"></td>
+    </tr><br>
+    <tr>
+        <td>UserName</td>
+        <td id="username"></td>
+    </tr><br>
+    <tr>
+        <td>Email</td>
+        <td id="email"></td>
+    </tr><br>
+    <tr>
+        <td>Password</td>
+        <td id="password"></td>
+    </tr><br>
+    <tr>
+        <td>Phone No</td>
+        <td id="phoneno"></td>
+    </tr><br>
+    <tr>
+        <td>Address</td>
+        <td id="address"></td>
+    </tr><br>
+    </table>
+    <input type="submit" onclick="clicksubmit()">
+
+
+    <script>
+
+        function clicksubmit(){
+            document.getElementById('name').innerHTML = 'Siranjeevi';
+        document.getElementById('dob').innerHTML = '01/05/2001';
+        document.getElementById('username').innerHTML = 'siran';
+        document.getElementById('password').innerHTML = 'Siran@123';
+        document.getElementById('email').innerHTML = 'Siranjeevicad01@gmail.com';
+        document.getElementById('phoneno').innerHTML = '6383685553';
+        document.getElementById('address').innerHTML = 'Perambalur';
+        }
+        
+        
+        
+    </script>
+</html>

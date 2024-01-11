@@ -7,8 +7,74 @@
 </head>
 <body>
     <h1>Welcome to javascript web page</h1>
-    <script src="js/javascript.js">
+    <input type="text" id="a">
+    <input type="text" id="b">
+    <input type="submit" onclick="operators(c)" value="calculate">
+    <h1 id="add">Additon</h1>
+    <h1 id="sub">Subtraction</h1>
+    <h1 id="mul">Multiplication</h1>
+    <h1 id="div">Division</h1>
+    <script>
+
+        var v1=document.getElementById("a").value;
+        var v2=document.getElementById("b").value;
+
+
+        var v1=Number(v1)
+        var v2=Number(v2)
         
+        
+        
+
+        function operators(c){
+            switch (c) {
+                case ('+'):
+                    document.getElementById("add").innerHTML = v1+v2;                    
+                    break;
+                case ('-'):
+                    document.getElementById("sub").innerHTML = v1-v2;                   
+                    break;
+                case ('*'):
+                    document.getElementById("mul").innerHTML = v1*v2;                   
+                    break;
+                case ('/'):
+                    document.getElementById("div").innerHTML = v1/v2;                    
+                    break;
+            
+            }
+        }
+
+
+
+
+        /*
+
+
+        function operators(){
+                if('+'){
+                    document.getElementById("add").innerHTML = v1+v2;
+                }
+                                        
+                
+                if ('-'){
+                    document.getElementById("sub").innerHTML = v1+v2;
+                }
+                                       
+                
+                if ('*'){
+                    document.getElementById("mul").innerHTML = v1*v2;
+                }
+                                       
+                if ('/'){
+                    document.getElementById("div").innerHTML = v1/v2;
+                }
+                                     
+            
+            } */
+        
+
+
+
     </script>
 </body>
 </html>

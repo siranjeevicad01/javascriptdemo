@@ -1,5 +1,5 @@
 //alert("Just click the OK button")
-
+/*
 console.log(10);
 console.log({fname:"Jeevi", lname:"S"});
 
@@ -114,5 +114,19 @@ function checkstring(a){
     }
 }
 checkstring(prompt("Enter some other"))
+*/
 
+function sum(m){
+    if(m<35 )
+    console.log('FAIL');
+    else if((m>=35) & (m<60))
+    console.log('Grade C');
+    else if((m>=60) & (m<70))
+    console.log('Grade B');
+    else if((m>=70) & (m<80))
+    console.log('Grade A');
+    else if((m>=90) & (m<=100))
+    console.log('Distinsion');
+}
+sum()
 
