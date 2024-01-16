@@ -7,60 +7,113 @@
     <link rel="stylesheet" href="reg.css">
 </head>
 <body>
-    <table class="tbl" border="1 px">
-    <tr>
-        <td>Registeration Form </td>
-    </tr><br>
+    <h1>Student Registeration Form</h1>
+    <table border="1 px">
     <tr>
         <td>Name</td>
-        <td id="name"></td>
+        <td ><input type="text" id="tbname"></td>
+        
     </tr><br>
     <tr>
         <td>DOB</td>
-        <td id="dob"></td>
+        <td ><input type="date" id="tbdob"></td>
     </tr><br>
     <tr>
+        <td>Gender</td>
+        <td><input type="radio" value="male"><input type="radio" value="female"></td>
+    </tr>
+    <tr>
         <td>UserName</td>
-        <td id="username"></td>
+        <td ><input type="text" id="tbusername"></td>
     </tr><br>
     <tr>
         <td>Email</td>
-        <td id="email"></td>
+        <td ><input type="email" id="tbemail"></td>
     </tr><br>
     <tr>
         <td>Password</td>
-        <td id="password"></td>
+        <td ><input type="password" id="tbpassword"></td>
     </tr><br>
     <tr>
         <td>Phone No</td>
-        <td id="phoneno"></td>
+        <td ><input type="number" id="tbphoneno"></td>
     </tr><br>
     <tr>
         <td>Address</td>
-        <td id="address"></td>
+        <td ><input type="text" id="tbaddress"></td>
     </tr><br>
     </table>
-    <input type="submit" onclick="clicksubmit()">
+    <input type="submit" onclick="clicksave()">
+    <br><br>
+    
 
 
     <script>
 
-        function clicksubmit(){
-            document.getElementById('name').innerHTML = 'Siranjeevi';
-        document.getElementById('dob').innerHTML = '01/05/2001';
-        document.getElementById('username').innerHTML = 'siran';
-        document.getElementById('password').innerHTML = 'Siran@123';
-        document.getElementById('email').innerHTML = 'Siranjeevicad01@gmail.com';
-        document.getElementById('phoneno').innerHTML = '6383685553';
-        document.getElementById('address').innerHTML = 'Perambalur';
-        }
+function clicksave(){
+        var Name=document.getElementById('tbname').value
+        document.getElementById('name').innerHTML=Name
+        document.createElement("input")=listitem
+        listitem.innerHTML=input.value
+        Name.uppend(listitem)
+        
+
+        var DOB=document.getElementById('tbdob').value
+        DOB=document.getElementById('dob').innerHTML=DOB
+        DOB.uppend(listitem)
+
+        UserName=document.getElementById('tbusername').value
+        document.getElementById('username').innerHTML=UserName
+        UserName.uppend(listitem)
+
+        Password=document.getElementById('tbpassword').value
+        document.getElementById('password').innerHTML=Password
+        Password.uppend(listitem)
+
+        Email=document.getElementById('tbemail').value 
+        document.getElementById('email').innerHTML=Email
+        Email.uppend(listitem)
+
+        PhoneNo=document.getElementById('tbphoneno').value 
+        document.getElementById('phoneno').innerHTML=PhoneNo
+        PhoneNo.uppend(listitem)
+
+        Address=document.getElementById('tbaddress').value
+        document.getElementById('address').innerHTML=Address
+        Address.uppend(listitem)
+    }
+    
+
+
+    </script><br>
+
+    <table border="1 px" class="dbform">
+        <tr>
+        <td>Name</td>
+        <td>DOB</td>
+        <td>UserName</td>
+        <td>Email</td>
+        <td>Password</td>
+        <td>Phone No</td>
+        <td>Address</td>
+        </tr>
+
+        <tr>
+            <td id="name"></td>
+            <td id="dob"></td>
+            <td id="username"></td>
+            <td id="email"></td>
+            <td id="password"></td>
+            <td id="phoneno"></td>
+            <td id="address"></td>
+        </tr>
+
+    </table>
 
 
 
 
-        
-        
-        
-        
-    </script>
+
+
+
 </html>
