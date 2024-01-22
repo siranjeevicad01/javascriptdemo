@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+       function checkingWithSwitch(a)
+{
+
+    console.log(a, typeof a);
+
+   var a=Number(a);
+    console.log(a, typeof a);
+    switch(a){
+        case 1:
+            // statement
+            console.log('executed case s', typeof a);
+            break;
+        case 2:
+            // statement
+            console.log("case 2 executed",a);
+            
+            break;
+        case 3:
+            // statement
+            console.log("case 3 executed");
+            break;
+        
+        default:
+            // statement
+            
+            alert("cases not in list");
+    }
+
+}
+console.clear();
+checkingWithSwitch(prompt("Enter the condition value"));*/
+function checkingWithSwitch(a)
+{
+
+   var a1, b1;
+   a1=prompt("enter a1");
+   b1=prompt("enter b1");
+   a1=Number(a1);
+   b1=Number(b1);
+   
+
+    switch(a){
+        case 'add':
+            // statement
+            console.log('added value of ',a1, 'and ',b1,'is .. ', a1+b1);
+            break;
+        case 'subtract':
+            // statement
+            console.log('subtracted value of ',a1, 'and ',b1,'is .. ', a1-b1);
+            
+            break;
+        case 'multiply':
+            // statement
+            console.log("case 3 executed", a1*b1);
+            break;
+        
+        default:
+            // statement
+            
+            alert("operator not in the list");
+    }
+
+}
+console.clear();
+checkingWithSwitch(prompt("Enter Operator"));
+
+
+    </script>
+</body>
+</html>
